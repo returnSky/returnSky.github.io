@@ -101,6 +101,4 @@ theme: arknights
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:returnSky/returnSky.github.io.git
-  branch: main
+  type: ""

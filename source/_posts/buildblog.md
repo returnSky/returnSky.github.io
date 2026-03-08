@@ -107,8 +107,8 @@ highlight:
 theme: arknights
 ```
 
-1. 把 **themes/arknights/\_config.yml** 剪切到项目根目录，并重命名为 `_config.arknights.yml`
-2. 修改`_config.arknights.yml`开启字数统计和阅读时间预估
+2. 把 **themes/arknights/\_config.yml** 剪切到项目根目录，并重命名为 `_config.arknights.yml`
+3. 修改`_config.arknights.yml`开启字数统计和阅读时间预估
 
    ```yaml
    count: true # 是否显示字数统计
@@ -129,13 +129,11 @@ git remote add origin https://github.com/username/username.github.io.git
 git branch -M main
 ```
 
-1. 在代码仓库中前往 **Settings** > **Pages** 。
-
+2. 在代码仓库中前往 **Settings** > **Pages** 。
    将 source 选项更改为 **GitHub Actions。**
-
    ![GitHub Pages设置](/images/github-pages-setting.png)
 
-2. 创建 `.github/workflows/pages.yml` 文件，写入以下内容并提交：
+3. 创建 `.github/workflows/pages.yml` 文件，写入以下内容并提交：
 
    ```yaml
    name: Pages
@@ -190,10 +188,12 @@ git branch -M main
 
 > 注意，这里面的 node version 最好要跟你本地环境的一致。可以通过 `node -v` 查看，只要大版本一致即可。
 
-1. 提交改动，将 `main` 分支 push 到 GitHub：
+4. 提交改动，将 `main` 分支 push 到 GitHub：
 
 ```bash
 git push -u origin main
 ```
 
 > 默认情况下 `public/` 不会被上传(也不该被上传)，确保 `.gitignore` 文件中包含一行 `public/`。
+
+5. Github Action 会自动触发部署，成功后前往 username.github.io 查看网页。
