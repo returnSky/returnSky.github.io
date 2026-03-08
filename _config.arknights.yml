@@ -93,10 +93,10 @@ search:
 
 # 背景音乐
 bgm:
-  enable: false
+  enable: true
   autoplay: true
   loop: true
-  src: /audio/bgm.mp3
+  src: /audio/OP3.mp3
 
 # Vercount
 # 详见 https://vercount.one/

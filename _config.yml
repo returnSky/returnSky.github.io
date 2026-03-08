@@ -5,15 +5,15 @@
 # Site
 title: Jack Hong's Blog
 subtitle: ""
-description: ""
-keywords:
+description: "Jack Hong's Blog"
+keywords: "Blog"
 author: Jack Hong
-language: en
-timezone: ""
+language: zh-CN
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://returnsky.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -101,4 +101,6 @@ theme: arknights
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  repo: git@github.com:returnSky/returnSky.github.io.git
+  branch: main
